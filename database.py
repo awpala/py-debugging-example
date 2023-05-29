@@ -2,7 +2,7 @@ from user import User
 from utils import get_input, validate_int
 
 class Database:
-    def __init__(self, users):
+    def __init__(self, users: list[User]):
         self.users = users
 
     def create_user(self):

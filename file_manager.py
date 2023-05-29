@@ -1,11 +1,11 @@
 from user import User
 
 class FileManager:
-    def __init__(self, filename):
+    def __init__(self, filename: str):
         self.filename = filename
 
     def load_data(self):
-        users = []
+        users: list[User] = []
 
         try:
             with open(self.filename, "r") as file:
@@ -19,7 +19,7 @@ class FileManager:
         
         return users
 
-    def save_data(self, users):
+    def save_data(self, users: list[User]):
         with open(self.filename, "w") as file:
             for user in users:
                 file.write(f"{user.name},{user.age},{user.email}\n")
