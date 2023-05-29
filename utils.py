@@ -1,7 +1,7 @@
-def get_input(prompt):
+def get_input(prompt: str):
     return input(prompt).strip()
 
-def validate_int(prompt):
+def validate_int(prompt: str):
     while True:
         value = get_input(prompt)
         if value.isdigit():
