@@ -51,7 +51,7 @@ class Database:
         else:
             print("User not found.\n")
 
-    def find_user_by_email(self, email):
+    def find_user_by_email(self, email: str):
         for user in self.users:
             if user.email == email:
                 return user
