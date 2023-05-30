@@ -12,12 +12,10 @@ python main.py <filename>
 
 ## Description of Files
 
-`main.py` contains the entrypoint of the application.
-
-`user.py` defines the central entity user via corresponding class `User`, which in turn populates the constituent database.
-
-`database.py` defines the class `Database` which performs create/read/update/delete (i.e., full "CRUD") operations.
-
-`utils.py` defines helper utilities for validating user inputs.
-
-`file_manager.py` defines the class `FileManager` which performs file read/write operations on the underlying database file (e.g., `users.txt`), in order to persist the users in local memory between runs of the application.
+| Filename | Description |
+|:--|:--|
+| `main.py` | contains the entrypoint of the application |
+| `user.py` | defines the central entity user via corresponding class `User`, which in turn populates the constituent database |
+| `database.py` | defines the class `Database` which performs create/read/update/delete (i.e., full "CRUD") operations |
+| `utils.py` | defines helper utilities for parsing user inputs |
+| `file_manager.py` | defines the class `FileManager` which performs file read/write operations on the underlying database file (e.g., `users.txt`), in order to persist the users in local memory between runs of the application |
