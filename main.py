@@ -2,10 +2,10 @@ import sys
 from database import Database
 from file_manager import FileManager
 
-REQUIRED_ARGS_COUNT = 2
+REQUIRED_ARGS_COUNT = 1
 
 def main():
-    if len(sys.argv) != REQUIRED_ARGS_COUNT:
+    if len(sys.argv) != REQUIRED_ARGS_COUNT + 1:
         print("Please provide a command line argument for the data file.")
         print("Usage: python main.py <data_file>")
         sys.exit(1)
