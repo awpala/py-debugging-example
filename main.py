@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 from database import Database
 from file_manager import FileManager
