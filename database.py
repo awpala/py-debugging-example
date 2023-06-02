@@ -21,7 +21,7 @@ class Database:
 
         user = self.find_user_by_email(email)
         if user:
-            print(user)
+            print(f"{user}\n")
         else:
             print("User not found.\n")
 
