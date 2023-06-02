@@ -1,5 +1,7 @@
 from user import User
 
+SEPARATOR_TOKEN = ","
+
 class FileManager:
     def __init__(self, filename: str):
         self.filename = filename
@@ -11,7 +13,7 @@ class FileManager:
             with open(self.filename, "r") as file:
                 lines = file.readlines()
                 for line in lines:
-                    name, age, email = line.strip().split(",")
+                    name, age, email = line.strip().split(SEPARATOR_TOKEN)
                     user = User(name, int(age), email)
                     users.append(user)
         except FileNotFoundError:
