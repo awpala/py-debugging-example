@@ -19,3 +19,13 @@ python main.py <filename>
 | `database.py` | defines the class `Database` which performs create/read/update/delete (i.e., full "CRUD") operations |
 | `utils.py` | defines helper utilities for parsing user inputs |
 | `file_manager.py` | defines the class `FileManager` which performs file read/write operations on the underlying database file (e.g., `users.txt`), in order to persist the users in local memory between runs of the application |
+
+## Unit Tests
+
+Unit tests are provided in `/__tests__`. To run, issue the following terminal command:
+
+```bash
+python -m unittest discover -s __tests__ -p *test*.py
+```
+
+Additionally, see `/.vscode/settings.json` for corresponding configuration for VS Code extension for [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
